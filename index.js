@@ -7,7 +7,7 @@ mongoose.connect('mongodb+srv://grcadmin:Will11035@techtests-pcmus.mongodb.net/t
     .then(db => console.log('db is connected'))
     .catch(err => console.log(err));
 
-app.set('port', process.env.PORT || 3001);
+app.set('port', process.env.PORT || 80);
 
 app.listen(app.get('port'), () => {
     console.log('Server on port 3000');
